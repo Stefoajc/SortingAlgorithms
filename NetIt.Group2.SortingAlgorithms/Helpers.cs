@@ -4,16 +4,16 @@ namespace NetIt.Group2.SortingAlgorithms
 {
     public static class Helpers
     {
-        public static int[] CreateCopy(int[] arrayToSort)
+        public static T[] CreateCopy<T>(T[] arrayToSort)
         {
-            var array = new int[arrayToSort.Length];
+            var array = new T[arrayToSort.Length];
             Array.Copy(arrayToSort, array, array.Length);
             return array;
         }
 
-        public static void Swap(int[] arrayNumbers, int j, int k)
+        public static void Swap<T>(T[] arrayNumbers, int j, int k)
         {
-            int current = arrayNumbers[k];
+            T current = arrayNumbers[k];
             arrayNumbers[k] = arrayNumbers[j];
             arrayNumbers[j] = current;
         }

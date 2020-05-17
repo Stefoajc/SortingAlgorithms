@@ -1,4 +1,7 @@
-﻿using System;
+﻿using NetIt.Group2.SortingAlgorithms.Search;
+using NetIt.Group2.SortingAlgorithms.Sorting;
+using System;
+using System.Linq;
 
 namespace NetIt.Group2.SortingAlgorithms
 {
@@ -13,6 +16,15 @@ namespace NetIt.Group2.SortingAlgorithms
             var sortedArray = sortingAlg.Sort(array);
 
             Helpers.Print(sortedArray);
+
+            //int[] array = Enumerable.Range(0, 100).ToArray();
+
+            //var search = new BinarySearch();
+
+            //for (int i = 0; i < array.Length; i++)
+            //{
+            //    Console.WriteLine(i == search.Search(array, array[i]));
+            //}
         }
     }
 }
